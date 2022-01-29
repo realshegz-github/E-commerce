@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@100;300;500;600&family=Raleway:wght@100;300;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background: whitesmoke;
+    font-family: 'Raleway';
+}
+.header{
+    background: radial-gradient(rgba(161, 43, 90, 0.164),rgba(215, 221, 233, 0.288));
+  
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 3px 20px rgba(77, 77, 85, 0.226);
+    /* z-index: 999; */
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+nav ul{
+    list-style: none;  
+    display: flex;
+}
+nav ul input{
+    border-radius: 10px;
+    padding: 7px 10px;
+    border: none;
+}
+
+.nav-menu li{
+    padding-right: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.938);
+    font-size: 16px;
+    font-weight: 600px;
+}
+nav ul li :hover{
+    color: rgba(111, 116, 119, 0.534);
+    cursor: pointer;
+}
+
+#home_content{
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-text h2{
+    font-size: 55px;
+    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(50, 48, 56);
+}
+.home-text p{
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 25px;
+    color: rgba(12, 10, 22, 0.932);
+    text-align: left;
+
+}
+.home-image img{
+    width: 100%;
+}
+.home-text button{
+    border: none;
+    background: rgba(4, 172, 238, 0.781);
+    color: whitesmoke;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: background-color  0.5s ease-in-out;
+}
+.home-text button:hover{
+    background-color:  rgba(22, 87, 207, 0.678); 
+    color: whitesmoke;
+    cursor: pointer;
+}
+.header .home-text{
+    margin-top: 70px;
+}
+
+#features{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 50px;
+    background-color: aliceblue;
+}
+.feature-card{
+    width: 180px;
+    /* height: 200px; */
+    text-align: center;
+    padding: 20px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgb(204, 201, 201);
+    border-radius: 10px;
+    margin: 15px 0;
+}
+.feature-card .shipping{
+    font-size:  16px;
+    background-color: brown;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color:whitesmoke;
+    margin-top: 50px;
+}
+.feature-card .save{
+    font-size:  16px;
+    background-color: rgb(80, 177, 104);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color:whitesmoke;
+}
+.feature-card .promotion{
+    font-size:  16px;
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color:rgb(109, 100, 100);
+}
+.feature-card .sell{
+    font-size:  16px;
+    background-color: rgb(130, 204, 238);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color:whitesmoke;
+}
+.feature-card .sales{
+    font-size:  16px;
+    background-color: violet;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color:whitesmoke;
+}
+.feature-card .support{
+    font-size:  16px;
+    background-color: greenyellow;
+    border-radius: 5px;
+    padding: 5px 10px;   
+}
+#features .feature-card:hover{
+    box-shadow: 10px 10px 24px rgba(134, 134, 134, 0.473);
+}
+.feature-card h6{
+    display: inline-block;
+}
+
+#products h2,p{
+    text-align: center;
+    line-height: 40px;
+}
+#products .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
