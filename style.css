@@ -6,7 +6,7 @@
 }
 body{
     width: 100%;
-    background: whitesmoke;
+    background-color: aliceblue;
     font-family: 'Raleway';
 }
 .header{
@@ -99,8 +99,7 @@ nav ul li :hover{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    padding: 40px 50px;
-    background-color: aliceblue;
+    padding: 40px 70px;
 }
 .feature-card{
     width: 180px;
@@ -155,19 +154,244 @@ nav ul li :hover{
     padding: 5px 10px;   
 }
 #features .feature-card:hover{
-    box-shadow: 10px 10px 24px rgba(134, 134, 134, 0.473);
+    box-shadow: 10px 10px 24px rgba(134, 134, 134, 0.048);
 }
 .feature-card h6{
     display: inline-block;
 }
 
-#products h2,p{
+#products{
     text-align: center;
-    line-height: 40px;
+    padding: 20px 70px;  
 }
-#products .row{
+#products h2,p{
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+ .product-card{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
+ .product-card .row{
+    margin: 20px 20px;
+   border: 1px solid rgba(0, 0, 0, 0.164);
+   border-radius: 25px;
+   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
+   width: 20%;
+   min-width: 250px;
+   cursor: pointer;
+   transition: 0.2s ease-in-out;
+}
+ .product-card .row:hover{
+    box-shadow: 20px 20px 30px rgba(61, 58, 58, 0.158);
+}
+ .product-card .row .col{
+    padding: 10px;
+}
+ .product-card .row .col img{
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(141, 136, 132, 0.151); 
+}
+ .product-card .row .col .description{
+    text-align: start;
+    padding: 10px;
+    position: relative;
+  
+  }
+  .description span{
+      color: #606063;
+      font-size: 14px;
+      font-family: 'Lora','Raleway';
+  }
+  .description h5{
+      color: #1a1a1a;
+      font-size: 16px;
+      padding-top: 5px;
+      font-family: 'Lora','Raleway';
+  }
+  .description i{
+    color: rgba(207, 177, 45, 0.959);
+    font-size: 14px;
+}
+.description h4{
+    padding-top: 5px;
+    color: rgb(26, 161, 128);
+    font-weight: 700;
+    transition: background-color 0.5s ease-in-out;
+}
+.col .description .cart a i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgba(49, 136, 56, 0.397);
+    color: rgb(73, 61, 59);
+    border: 1px solid none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.col .description .cart a i:hover{
+    background-color: rgba(45, 179, 56, 0.397);
+}
+#sales{
+
+}
+.discount-info{
+    background-image: url('/images/annie-spratt-wuc-KEIBrdE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+}
+.discount-text h4{
+    color: whitesmoke;
+    font-size: 16px;
+}
+.discount-text h2{
+    color: whitesmoke;
+    font-size: 30px;
+    padding: 15px 0;
+}
+.discount-text span{
+    color: rgba(190, 28, 28, 0.863);
+    font-size: 30px;
+}
+.discount-info button{
+    padding: 15px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgba(70, 55, 14, 0.774);
+    color: whitesmoke;
+    transition: background-color  0.2s ease-in-out;
+}
+.discount-info button:hover{
+    background-color:rgba(190, 28, 28, 0.863);
+    cursor: pointer;
+}
+
+#officials{
+    text-align: center;
+    padding: 50px 70px;  
+
+}
+#officials p{
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+#banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+.banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("/images/hanged-shirt.jpg");
+    background-position: center;
+    background-size: cover;
+    min-width: 580px;
+    height: 40vh;
+    padding: 30px;
+}
+
+.banner-box h4{
+    font-size: 20px;
+    color: white;
+}
+.banner-box h2{
+    font-size: 30px;
+    color: white;
+    padding: 10px 0;
+}
+.banner-box span{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: white;
+    padding-bottom: 10px;
+}
+.banner-box:hover{
+    box-shadow: 15px 15px 20px rgba(61, 58, 58, 0.158); 
+    cursor: pointer; 
+}
+#second_box{
+    background-image: url('/images/red-sweaties.jpg');  
+}
+.button-white{
+    font-size: 16px;
+    background-color: rgba(30, 124, 38, 0.041);
+    padding:10px;
+    border: 2px solid white;
+    color: whitesmoke;
+}
+.button-black{
+    font-size: 16px;
+    background-color: rgba(124, 30, 38, 0.041);
+    padding:10px;
+    border: 2px solid white;
+    color: rgba(14, 15, 85, 0.534);
+}
+
+.banner-box:hover button{
+    background-color:rgba(27, 104, 33, 0.719);
+    cursor: pointer;
+}
+#second_box:hover button{
+    background:rgba(216, 59, 59, 0.836);
+    color: whitesmoke;
+    cursor: pointer;
+}
+#banner_collection{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 30px;
+}
+#banner_collection .banner-box-col{
+    background-image: url('/images/bags.jpg');
+    background-position: center;
+    background-size: cover;
+    min-width: 300px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: whitesmoke;
+    padding: 30px;
+}
+#banner_collection .box2{
+    background-image: url('/images/causual.jpg');
+}
+#banner_collection .box3{
+    background-image: url('/images/short-vintage.jpg');
+}
+
+#banner_collection .banner-box-col h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+#banner_collection .banner-box-col h3{
+    font-size: 14px;
+    color: rgba(245, 238, 238, 0.685);
+    font-family: 'Poppins';
+}
+
+
 
