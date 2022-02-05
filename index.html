@@ -11,21 +11,28 @@
 <body>
     <header class="header">
         <nav class="nav-bar">
-            <div class="logo">
-                <a href="#"><img src="/images/strybe-Logo.jpg" alt="logo" width="50px" height="40px"/></a>
-                <span><strong>STRYBE</strong></span>
+            <div class="logo"> 
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><strong>STRYBE</strong></p>
             </div>
            
-            <ul class="nav-menu" id="nav_list">
-                <li><a href="#">Home</a> </li>
-                <li><a href="#">Products</a> </li>
-                <li><a href="#">About</a> </li>
-                <li><a href="#">Contact</a> </li>
-                <li><a href="#">Account</a> </li>
-                <li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i>
-                </a> </li>
-                <li><input type="search" placeholder="search"/></li>
-            </ul>
+            <div>
+                <ul class="nav-menu" id="nav_list">
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">Products</a> </li>
+                    <li><a href="#">About</a> </li>
+                    <li><a href="#">Contact</a> </li>
+                    <li><a href="#">Account</a> </li>
+                    <li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a> </li>
+                    <li><input type="search" placeholder="search"/></li>
+                    <a href="#"><i id="close" class="fas fa-times"></i></a>
+                </ul>
+                
+            </div>
+
+            <div id="mobile" class="hamburger-menu">
+                <li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a> </li>
+                <i id="bar" class="fas fa-bars"></i>
+            </div>
         </nav>
     
     <main id="home_content">
@@ -35,7 +42,7 @@
                 <button>Start Shopping &#10511;</button>
             </div>
             <div class="home-image">
-                <img src="/images/shopping.png" alt="shopping image"/>
+                <img src="/images/shopping.png" alt="shopping image" />
             </div>   
     </main>
 </header>
@@ -99,7 +106,7 @@
             <div class="row">
                 <div class="col">
                     <div class="col-image">
-                        <img src="/images/white-vintage.png" alt="vintage shirt" width="100%" height="250px"/>
+                        <img src="/images/hawalian-mix-removebg-preview.png" alt="vintage shirt" width="100%" height="250px"/>
                     </div>
                     <div class="description">
                         <span>strybe</span>
@@ -122,7 +129,7 @@
             <div class="row">
                 <div class="col">
                     <div class="col-image">
-                        <img src="/images/alessia-c_jpg-MraA7CvTxtc-unsplash-removebg-preview.png" alt="beach shirt"  width="100%" height="250px"/>
+                        <img src="/images/hawalian-removebg-preview.png" alt="beach shirt"  width="100%" height="250px"/>
                     </div>
                     <div class="description">
                         <span>strybe</span>
@@ -493,12 +500,14 @@
     <div class="news-content">
         <div class="news-text">
             <h2>Sign Up For Newsletters</h2>
-            <span>Get E-mail updates about our latest shop and <b style="color: rgb(184, 144, 11)">special offers.</b></span>
+            <div class="sign-up">
+                <input type="email" placeholder="Your email address"/>
+                <button>Sign Up</button>
+            </div>
+            <span>Get E-mail updates about our latest shop and <b style="color:rgb(236, 13, 13)">special offers.</b></span>
+      
         </div>
-        <div class="sign-up">
-            <input type="email" placeholder="Your email address"/>
-            <button>Sign Up</button>
-        </div>
+        
     </div>
 </section>
 
@@ -560,6 +569,8 @@
     </div>
 </footer>
 
-    <script src="script.js"></script>
+    <script src="/script.js">
+
+    </script>
 </body>
 </html>

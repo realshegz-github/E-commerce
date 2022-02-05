@@ -10,26 +10,40 @@ body{
     font-family: 'Raleway';
 }
 .header{
-    background: radial-gradient(rgba(161, 43, 90, 0.164),rgba(215, 221, 233, 0.288));
+    background: radial-gradient(rgba(161, 43, 90, 0.164),aliceblue);
     height: 100vh;
   
 }
 .logo{
     display: flex;
     align-items: center;
+    
 }
-.logo span{
-    color: navy;
+.logo p{
+    color: rgb(236, 13, 13);
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 120px;
+   
+}
+#mobile{
+    display: none;
+    margin-right: 30px;
+    list-style: none;
+    align-items: center;
+}
+#close{
+    display: none;
 }
 
 .nav-bar{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding:15px 20px;
-    box-shadow: 0 3px 20px rgba(77, 77, 85, 0.226);
+    padding: 20px 0;
+    box-shadow: 0 3px 20px rgba(77, 77, 85, 0.041);
     z-index: 1;
     position: fixed;
     top: 0;
@@ -40,6 +54,8 @@ body{
 nav ul{
     list-style: none;  
     display: flex;
+    align-items: center;
+
 }
 nav ul input{
     border-radius: 10px;
@@ -69,13 +85,14 @@ nav ul li :hover{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    position: relative;
 }
-
 .home-text h2{
     font-size: 55px;
-    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins','Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(50, 48, 56);
+    /* line-height: 60px; */
 }
 .home-text p{
     font-size: 18px;
@@ -86,18 +103,21 @@ nav ul li :hover{
 
 }
 .home-image img{
-    width: 100%;
+    width:70%;
+    position: absolute;
+    right:-70;
+    bottom: -73;
 }
 .home-text button{
     border: none;
-    background: rgba(4, 172, 238, 0.781);
+    background: rgb(236, 13, 13);
     color: whitesmoke;
     padding: 15px 30px;
     border-radius: 30px;
     transition: background-color  0.5s ease-in-out;
 }
 .home-text button:hover{
-    background-color:  rgba(22, 87, 207, 0.678); 
+    background-color:  black; 
     color: whitesmoke;
     cursor: pointer;
 }
@@ -175,9 +195,9 @@ nav ul li :hover{
     text-align: center;
     padding: 20px 70px;  
 }
-#products h2,p{
+#products p{
     line-height: 20px;
-    margin-bottom: 40px;
+    margin: 15px 0 40px 0;
 }
  .product-card{
     display: flex;
@@ -196,9 +216,12 @@ nav ul li :hover{
    cursor: pointer;
    transition: 0.2s ease-in-out;
 }
- .product-card .row:hover .cart a i{
+ .product-card .row:hover  .cart a i{
     box-shadow: 10px 10px 20px rgba(209, 207, 207, 0.322);
-    background-color: rgba(45, 179, 56, 0.397);
+    background-color: rgb(236, 13, 13);
+}
+ .product-card .row:hover h4{
+    color: rgba(12, 194, 52, 0.801);
 }
  .product-card .row .col{
     padding: 10px;
@@ -231,7 +254,7 @@ nav ul li :hover{
 }
 .description h4{
     padding-top: 5px;
-    color: rgb(26, 161, 128);
+    color: black;
     font-weight: 700;
     transition: background-color 0.5s ease-in-out;
 }
@@ -242,8 +265,8 @@ nav ul li :hover{
     font-weight: 500;
     text-align: center;
     border-radius: 50px;
-    background-color: rgba(49, 136, 56, 0.397);
-    color: rgb(73, 61, 59);
+    background-color: black;
+    color: whitesmoke;
     border: 1px solid none;
     position: absolute;
     bottom: 0;
@@ -356,6 +379,7 @@ nav ul li :hover{
     padding:10px;
     border: 2px solid white;
     color: teal;
+    
 }
 
 .banner-box:hover button{
@@ -410,31 +434,30 @@ nav ul li :hover{
 }
 #newsletter{
     margin: 30px 0;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .news-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    background: radial-gradient(rgba(37, 33, 35, 0.164),rgba(6, 15, 34, 0.678));
+    background: black;
     width: 100%;
     height: 40vh;
-    padding: 100px;
+    padding: 70px;
     color: white;
 }
-.news-text{
-    line-height: 30px;
-}
+
 .news-text h2{
-    line-height: 30px;
+   
     font-size: 25px;
 }
 .news-text h4{
     font-size: 16px;
 }
 .news-content input{
+    margin: 20px 0;
     padding: 10px;
-    width: 250px;
+    width: 300px;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -444,8 +467,8 @@ nav ul li :hover{
 .news-content button{
     padding: 10px;
     border: none;
-    width: 100px;
-    background-color: teal;
+    width: 140px;
+    background-color: rgb(236, 13, 13);
     color: white;
     outline: none;
     border-radius: 4px;
@@ -454,6 +477,8 @@ nav ul li :hover{
 }
 #newsletter .sign-up{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 footer{
     margin: 70px 0;
@@ -506,4 +531,104 @@ footer .copyright{
     text-align: center;
 }
 
+/* MEDIA QUERY */
+@media (max-width: 799px) {
+ 
+    #nav_list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: aliceblue;
+        box-shadow: 0 3px 20px rgba(77, 77, 85, 0.041);
+        padding: 50px 30px;
+        transition: 0.9s;  
+    }
+    .logo p{
+        color: rgb(236, 13, 13);
+        font-size: 20px;
+        font-weight: bolder;
+        padding-left: 70px;
+       
+    }
+    #nav_list li{
+        margin-bottom: 20px;
+        line-height: 40px;    
+    }
+    #nav_list li a i{
+       display: none;
+    }
+    #nav_list.active{
+        right: 0px;
+    }
+    nav ul input{
+        display: none;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: black;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    #mobile i:hover{
+        color: rgba(111, 116, 119, 0.534);
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    #close{
+        display: flex;
+        background-color: red;
+        align-items: center;
+        justify-content: center;
+        color: whitesmoke;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        font-size: 40px;
+    }
+    #close:hover{
+    background-color: rgba(111, 116, 119, 0.534);
+    }
+    #home_content{
+        width: 70%;
+        height: 70vh;
+        margin: auto 30px;
+        padding:40px;
+    }
+    .home-text {
+        line-height: 70px;     
+    }
+    .home-text h2{
+        font-size: 45px;
+    }
+    .home-text p{
+        font-size: 15px;
+        margin: 20px 0;
+        line-height: 30px;
+        color: rgba(12, 10, 22, 0.932);
+        text-align: left;
+    }
+    #home_content img{
+       display: none;
+    }
+    #features{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 70px 75px;
+    }
+   
+ 
 
+}
